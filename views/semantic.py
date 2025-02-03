@@ -8,6 +8,8 @@ from langchain_community.chat_message_histories import SQLChatMessageHistory
 from utils.custom_message_converter import MessageConverterWithDateTime
 from langchain_ollama import OllamaLLM
 
+from utils.load_doc import load_doc
+
 # Load environment variables
 load_dotenv()
 
@@ -26,6 +28,10 @@ def run_agent_with_pgvector(user_input: str, user_id: str, max_number_of_message
         connection=CONNECTION_STRING,
         collection_name="articles",
     )
+
+
+    # Load Documents in DB and create embeddings (commented out to avoid reloading documents)
+    # load_doc(db)
 
     # Initialize message history
     chat_history_table = "chat_messages"
