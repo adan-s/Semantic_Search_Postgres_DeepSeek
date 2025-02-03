@@ -104,16 +104,15 @@ DeepSeek is a conversational model provided by Ollama, which is integrated into 
 
 To set up a local instance of DeepSeek from Ollama, follow these steps:
 
-1. **Install Ollama**: First, you need to install the Ollama package. You can do this using pip:
-    ```sh
-    pip install ollama
-    ```
+1. **Install Ollama**: First, you need to install the Ollama package.
 
 2. **Download DeepSeek Model**: You need to download the DeepSeek model. This can be done using the Ollama CLI or API. Ensure you have the necessary permissions and access to the model.
 
 3. **Configure Ollama**: Set up the configuration for Ollama to use the DeepSeek model. This might involve setting environment variables or configuration files.
 
 4. **Integrate with LangChain**: Ensure that your LangChain setup is configured to use the local instance of DeepSeek. This involves specifying the model and any necessary parameters.
+
+For detailed instructions, refer to this [article](https://dev.to/ajmal_hasan/setting-up-ollama-running-deepseek-r1-locally-for-a-powerful-rag-system-4pd4).
 
 Here is an example of how you might configure and use the DeepSeek model locally in your `views/semantic.py` file:
 
