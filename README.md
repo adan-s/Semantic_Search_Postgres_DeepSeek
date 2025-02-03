@@ -146,25 +146,4 @@ agent = initialize_agent(
     memory=memory,
     verbose=True,
     handle_parsing_errors=True,
-)
-2. The application will be running at `http://127.0.0.1:3000`.
-
-3. Use the `/document/search` endpoint to search for documents. Example request:
-    ```sh
-    curl -X POST http://127.0.0.1:3000/document/search -H "Content-Type: application/json" -d '{"query": "your search query", "user_id": "user123", "max_messages": 5}'
-    ```
-
-## Project Structure
-
-- `main.py`: Entry point for the Flask application.
-- `config.py`: Configuration settings for the application.
-- `routes/semantic.py`: Defines the Flask routes for document search.
-- `views/semantic.py`: Contains the logic for interacting with LangChain and PGVector.
-
-## Contributing
-
-Contributions are welcome! Please open an issue or submit a pull request for any changes.
-
-## License
-
-This project is licensed under the MIT License. See the `LICENSE` file for details.
+)```
