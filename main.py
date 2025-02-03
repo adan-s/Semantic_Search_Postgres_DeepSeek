@@ -2,7 +2,6 @@ from flask import Flask, Blueprint
 import config
 import routes
 from dotenv import load_dotenv
-from views import SemanticView
 
 # Load environment variables
 load_dotenv()
