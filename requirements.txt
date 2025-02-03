@@ -1,0 +1,8 @@
+Flask==2.1.2
+langchain==0.0.1
+langchain-openai==0.0.1
+langchain-postgres==0.0.1
+langchain-ollama==0.0.1
+langchain-community==0.0.1
+psycopg2==2.9.3
+python-dotenv==0.19.2
